@@ -1,0 +1,11 @@
+originalMessageStr  = input("What is the word you want writen backwards? ")
+originalMessage = len(originalMessageStr)-1
+newMessageStr = " "  
+for myCountInt in range(originalMessage, -1, -1):
+  newMessageStr = newMessageStr + originalMessageStr[myCountInt] 
+print( "The backwars word is: " + newMessageStr)
+originalMessageStr = " " + originalMessageStr
+if (str(originalMessageStr) == str(newMessageStr)):
+  print ("The sentence/phrase you entered is a palindrome!")
+else:
+  print ("This sentence/phrase is not a palindrome!")
